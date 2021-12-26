@@ -1,8 +1,14 @@
-<html>
-  <head>
-    <title>データの可視化アプリ</title>
-  </head>
-  <body>
-    <h1>データを可視化するぞ( ´ ▽ ` )</h1>
-  </body>
-</html>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>各国の上位２００のパスワード</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<body>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
